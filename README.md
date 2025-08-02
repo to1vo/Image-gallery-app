@@ -1,4 +1,4 @@
-# PHP OOP kuva galleria
+# Image Gallery App
 
 HTML, CSS/Bootstrap, PHP, SQL, MySQL <br>
 Sain [Pinterestistä](https://fi.pinterest.com/) idean tähän PHP:llä toteutettuun kuva galleriaan. Käyttäjien ja kuvien tiedot tallennetaan MySQL tietokantaan. Kuvat itsessään tallentuvat paikallisesti kansioon.
