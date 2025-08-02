@@ -14,7 +14,7 @@
             }
         ?>
         <div>
-        <form action="includes/signup.inc.php" method="post">
+        <form action="../includes/signup.inc.php" method="post">
             <label for="username">Username</label>
             <input class="form-control login-form-field" type="text" id="username" name="username" placeholder="Username" required>
             <label for="password">Password</label>

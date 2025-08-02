@@ -35,12 +35,12 @@ require_once 'header.php';
                         <?php
                         if($user == "Unknown"){
                         ?>
-                            <img class="userimg" src="img/user/default-user-img.png" alt="profile-picture">
+                            <img class="userimg" src="../img/user/default-user-img.png" alt="profile-picture">
                             <b><?php echo $user?></b>
                         <?php
                         } else {
                             ?>
-                            <img class="userimg" src="<?php echo 'img/user/'.$userImg[0]['usersImg']; ?>" alt="profile-picture"> 
+                            <img class="userimg" src="<?php echo '../img/user/'.$userImg[0]['usersImg']; ?>" alt="profile-picture"> 
                             <b><?php echo $user;?></b>
                         <?php
                         }
@@ -48,7 +48,7 @@ require_once 'header.php';
                     </p>
                 </a>
                 <div class="mt-4 mb-5">
-                    <form action="includes/save-image.inc.php?img='<?php echo $img; ?>'&&desc='<?php echo $desc; ?>'&&title='<?php echo $title; ?>'" method="post">
+                    <form action="../includes/save-image.inc.php?img='<?php echo $img; ?>'&&desc='<?php echo $desc; ?>'&&title='<?php echo $title; ?>'" method="post">
                         <button class="btn btn-primary" type="submit" name="downloadimage">Save</button>
                     </form>
                 </div>
@@ -70,9 +70,9 @@ require_once 'header.php';
                     } 
                     if($results){ ?>
                         <div class="gallery-img-div col">
-                        <a href="single.php?img=<?php echo 'img/gallery/'.$image['imgFullNameGallery'];?>&desc=<?php echo $image['descGallery'];?>&title=<?php echo $image['titleGallery'];?>&user=<?php echo $image['userGallery']; ?>">
+                        <a href="single.php?img=<?php echo '../img/gallery/'.$image['imgFullNameGallery'];?>&desc=<?php echo $image['descGallery'];?>&title=<?php echo $image['titleGallery'];?>&user=<?php echo $image['userGallery']; ?>">
                             <div class="gallery-img-div-inner">
-                                <img class="gallery-img uploaded-img"src="<?php echo 'img/gallery/'.$image['imgFullNameGallery'];?>" oncontextmenu="return false;">
+                                <img class="gallery-img uploaded-img"src="<?php echo '../img/gallery/'.$image['imgFullNameGallery'];?>" oncontextmenu="return false;">
                                 <h4 class="hover-text">Open</h4>
                             </div>
                         </a>

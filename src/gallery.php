@@ -10,9 +10,9 @@
             <?php 
                 foreach($images as $image){ ?>
                     <div class="gallery-img-div col">
-                        <a href="single.php?img=<?php echo 'img/gallery/'.$image['imgFullNameGallery'];?>&desc=<?php echo $image['descGallery'];?>&title=<?php echo $image['titleGallery'];?>&user=<?php echo $image['userGallery']; ?>">
+                        <a href="single.php?img=<?php echo '../img/gallery/'.$image['imgFullNameGallery'];?>&desc=<?php echo $image['descGallery'];?>&title=<?php echo $image['titleGallery'];?>&user=<?php echo $image['userGallery']; ?>">
                             <div class="gallery-img-div-inner">
-                                <img class="gallery-img uploaded-img"src="<?php echo 'img/gallery/'.$image['imgFullNameGallery'];?>" oncontextmenu="return false;">
+                                <img class="gallery-img uploaded-img"src="<?php echo '../img/gallery/'.$image['imgFullNameGallery'];?>" oncontextmenu="return false;">
                                 <h4 class="hover-text">Open</h4>
                             </div>
                         </a> 

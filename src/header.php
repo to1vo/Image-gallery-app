@@ -1,8 +1,8 @@
 <?php
     session_start();
-    include "classes/database.classes.php";
-    include "includes/get-user.inc.php";
-    include "includes/get-gallery.inc.php";
+    include "../classes/database.classes.php";
+    include "../includes/get-user.inc.php";
+    include "../includes/get-gallery.inc.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +13,7 @@
     <title>Gallery</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
@@ -32,7 +32,7 @@
                     ?>
                         <div class="dropdown">
                             <button class="dropdown-button">
-                            <Img class="navbar-img" src="<?php echo 'img/user/'.$userImg[0]['usersImg']; ?>">
+                            <Img class="navbar-img" src="<?php echo '../img/user/'.$userImg[0]['usersImg']; ?>">
                             <?php echo $_SESSION['username']; ?>
                             </button>
                             <ul>

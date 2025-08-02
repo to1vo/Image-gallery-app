@@ -12,13 +12,13 @@ if(isset($_GET['image'])){
         <div class="single-container">
             <div class="single-div-img">
                 <a href="#">
-                    <img class="single-img uploaded-img" src="<?php echo 'img/gallery/'.$imgfullname;?>" oncontextmenu="return false;">
+                    <img class="single-img uploaded-img" src="<?php echo '../img/gallery/'.$imgfullname;?>" oncontextmenu="return false;">
                 </a>
             </div>
             <div class="single-div">
                 <h3>Edit image</h3>
                 <div class="edit-image-form-div">
-                <form action="includes/image-update.inc.php?imgfullname=<?php echo $imgfullname; ?>" method="post">
+                <form action="../includes/image-update.inc.php?imgfullname=<?php echo $imgfullname; ?>" method="post">
                     <label for="title">Title</label>
                     <input type="text" class="form-item form-control edit-image-form-field" id="title" name="title" value="<?php echo $image[0]['titleGallery']; ?>" placeholder="Title">
                     <label for="desc">Description</label>
@@ -33,9 +33,9 @@ if(isset($_GET['image'])){
         <?php
         foreach($images as $image){ ?>
             <div class="gallery-img-div col">
-                <a href="single.php?img=<?php echo 'img/gallery/'.$image['imgFullNameGallery'];?>&desc=<?php echo $image['descGallery'];?>&title=<?php echo $image['titleGallery'];?>&user=<?php echo $image['userGallery']; ?>">
+                <a href="single.php?img=<?php echo '../img/gallery/'.$image['imgFullNameGallery'];?>&desc=<?php echo $image['descGallery'];?>&title=<?php echo $image['titleGallery'];?>&user=<?php echo $image['userGallery']; ?>">
                 <div class="gallery-img-div-inner">
-                    <img class="gallery-img uploaded-img"src="<?php echo 'img/gallery/'.$image['imgFullNameGallery']?>" oncontextmenu="return false;">
+                    <img class="gallery-img uploaded-img"src="<?php echo '../img/gallery/'.$image['imgFullNameGallery']?>" oncontextmenu="return false;">
                     <h4 class="hover-text">Preview</h4>
                     <h4 class="hover-text"><a href="edit-image.php?image=<?php echo $image['imgFullNameGallery']; ?>">Edit</a></h4>
                 </div>

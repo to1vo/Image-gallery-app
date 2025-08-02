@@ -14,7 +14,7 @@ if(isset($_SESSION['username'])){ ?>
         <?php
             }
         ?>
-            <form action="includes/gallery-upload.inc.php" method="post" enctype="multipart/form-data">
+            <form action="../includes/gallery-upload.inc.php" method="post" enctype="multipart/form-data">
                 <label for="filename">Name</label>
                 <input class="form-control login-form-field" type="text" id="filename" name="filename" placeholder="File name..."><br>
                 <label for="filetitle">Title</label>

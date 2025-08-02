@@ -13,7 +13,7 @@ if(isset($_SESSION['username'])){
 <div class="container mt-3 main-div">
         <div class="user-info-div">
             <div class="user-info-profile-picture-div">
-                <img class="user-info-profile-image" src="<?php echo 'img/user/'.$user[0]['usersImg']; ?>" alt="user-profile-picture">
+                <img class="user-info-profile-image" src="<?php echo '../img/user/'.$user[0]['usersImg']; ?>" alt="user-profile-picture">
             </div>
                 <h2><?php echo $username; ?></h2>
                 <div class="info-div">
@@ -30,9 +30,9 @@ if(isset($_SESSION['username'])){
                     <?php
                     foreach($images as $image){ ?>
                         <div class="gallery-img-div col">
-                            <a href="single.php?img=<?php echo 'img/gallery/'.$image['imgFullNameGallery'];?>&desc=<?php echo $image['descGallery'];?>&title=<?php echo $image['titleGallery'];?>&user=<?php echo $image['userGallery']; ?>">
+                            <a href="single.php?img=<?php echo '../img/gallery/'.$image['imgFullNameGallery'];?>&desc=<?php echo $image['descGallery'];?>&title=<?php echo $image['titleGallery'];?>&user=<?php echo $image['userGallery']; ?>">
                             <div class="gallery-img-div-inner">
-                                <img class="gallery-img uploaded-img"src="<?php echo 'img/gallery/'.$image['imgFullNameGallery']?>" oncontextmenu="return false;">
+                                <img class="gallery-img uploaded-img"src="<?php echo '../img/gallery/'.$image['imgFullNameGallery']?>" oncontextmenu="return false;">
                                 <h4 class="hover-text">Preview</h4>
                                 <h4 class="hover-text"><a href="edit-image.php?image=<?php echo $image['imgFullNameGallery']; ?>">Edit</a></h4>
                             </div>
