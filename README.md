@@ -1,18 +1,18 @@
-# Image Gallery App
+# Image Gallery App 📷
 
-HTML, CSS/Bootstrap, PHP, SQL, MySQL <br>
-Sain [Pinterestistä](https://fi.pinterest.com/) idean tähän PHP:llä toteutettuun kuva galleriaan. Käyttäjien ja kuvien tiedot tallennetaan MySQL tietokantaan. Kuvat itsessään tallentuvat paikallisesti kansioon.
+Created with the use of HTML/CSS/Bootstrap, PHP, SQL and MySQL
 
-## Ominaisuudet
-- Kuvien katselu sekä haku
-- Käyttäjien profiilien katselu
-- Uuden käyttäjän luominen
-- Sisään sekä ulos kirjautuminen
+Got the idea for this project about [Pinterest](https://en.pinterest.com/) and wanted to learn more about PHP
 
-## Kirjautuneena
-- Kuvan lisääminen
-- Itse lisätyiden kuvien muokkaaminen
-    - Kuvan nimi
-    - Kuvaus
-- Oman profiilin muokkaus
-- Muiden kuvien lataaminen
+## Features
+- Create an account
+- Edit your profile
+- Login and logout
+- Browse and search images
+- Look at other peoples profiles
+- Add images (name and description)
+    - Saved locally
+- Download other peoples images
+
+<br>
+Toivo Lindholm
