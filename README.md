@@ -1,6 +1,6 @@
 # Image Gallery App 📷
 
-Created with the use of HTML/CSS/Bootstrap, PHP, SQL and MySQL
+Created with the use of HTML/CSS/Bootstrap, PHP, SQL and MySQL in 2023
 
 Got the idea for this project about [Pinterest](https://en.pinterest.com/) and wanted to learn more about PHP
 
