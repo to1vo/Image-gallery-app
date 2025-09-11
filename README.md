@@ -17,4 +17,4 @@ Got the idea for this project about [Pinterest](https://en.pinterest.com/) and w
 <img src="https://to1vo.gitlab.io/toivo-lindholm/img/projektit/php-gallery/1.PNG" width="400">
 
 <br>
-Toivo Lindholm
+Toivo Lindholm 2023
